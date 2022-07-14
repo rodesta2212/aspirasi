@@ -23,6 +23,11 @@
 								<span class="micon dw dw-edit-file"></span><span class="mtext">Aspirasi</span>
 							</a>
 						</li>
+						<li>
+							<a href="laporan-hasil-advokasi.php" class="dropdown-toggle no-arrow">
+								<span class="micon dw dw-file-135"></span><span class="mtext">Laporan Hasil</span>
+							</a>
+						</li>
 					<?php elseif ($_SESSION['role'] == 'bem'): ?>
 						<!-- BEM -->
 						<li>

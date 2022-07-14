@@ -81,7 +81,12 @@
 					<?php endif; ?>
 					<div style="padding-right:15px;">
                         <!-- <a href="ujian-create"> -->
-                            <button type="submit" class="btn btn-success float-right">Simpan</button>
+							<?php if($_SESSION['role'] == 'bem'): ?>
+								<a href="#" class="btn btn-danger float-right">Penolakan</a>
+								<button type="submit" class="btn btn-success float-right">Verifikasi</button>
+							<?php elseif($_SESSION['role'] == 'dpm'): ?>
+								<button type="submit" class="btn btn-success float-right">Konfirmasi</button>
+							<?php endif; ?>
                         <!-- </a> -->
                     </div>
 					<!-- horizontal Basic Forms Start -->

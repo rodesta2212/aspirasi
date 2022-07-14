@@ -38,7 +38,7 @@
 							<?php elseif ($_SESSION['role'] == 'bem'): ?>
 								Badan Eksekutif Mahasiswa
 							<?php else: ?>
-								Badan Perwakilan Mahasiswa
+								Dewan Perwakilan Mahasiswa
 							<?php endif; ?>
 							<div class="weight-600 font-30 text-blue"><?php echo $_SESSION['nama']; ?></div>
 						</h4>
