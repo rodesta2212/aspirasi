@@ -28,6 +28,11 @@
 								<span class="micon dw dw-file-135"></span><span class="mtext">Laporan Hasil</span>
 							</a>
 						</li>
+						<li>
+							<a href="laporan-grafik.php" class="dropdown-toggle no-arrow">
+								<span class="micon dw dw-analytics-1"></span><span class="mtext">Laporan Grafik</span>
+							</a>
+						</li>
 					<?php elseif ($_SESSION['role'] == 'bem'): ?>
 						<!-- BEM -->
 						<li>
