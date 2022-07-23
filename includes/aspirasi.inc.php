@@ -62,6 +62,7 @@ class Aspirasi {
 		FROM {$this->table_aspirasi} A 
 		LEFT JOIN {$this->table_mahasiswa} B ON A.id_mahasiswa=B.id_mahasiswa 
 		LEFT JOIN {$this->table_kategori} C ON A.id_kategori=C.id_kategori 
+		WHERE A.status != 'Selesai'
 		ORDER BY id_aspirasi ASC";
 		$stmt = $this->conn->prepare( $query );
 		$stmt->execute();
