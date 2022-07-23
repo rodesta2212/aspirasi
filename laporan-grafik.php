@@ -41,13 +41,6 @@
 					</div>
 				</div>
 			</div>
-			<div>
-				<?php $no=1; $Aspirasis = $Aspirasi->LaporanPerkategori(); 
-					while ($row = $Aspirasis->fetch(PDO::FETCH_ASSOC)) : 
-				?>
-					{ x: '<?=$row['nama_kategori']?>', data1: <?=$row['jml_aspirasi']?> },
-				<?php $no++; endwhile; ?>
-			</div>
 
 			<!-- footer -->
             <?php include("footer.php"); ?>
