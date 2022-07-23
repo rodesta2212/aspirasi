@@ -69,7 +69,7 @@
 							<thead>
 								<tr class="text-center">
 									<th>No</th>
-									<th>aspirasi</th>
+									<th>Aspirasi</th>
                                     <th>Kategori</th>
                                     <th>Status</th>
 									<th>Action</th>

@@ -2,6 +2,7 @@
 class User {
     private $conn;
     private $table_user = 'user';
+	private $table_mahasiswa = 'mahasiswa';
 
     public $id_user;
     public $username;
@@ -64,6 +65,16 @@ class User {
         $this->username = $row['username'];
 		$this->password = $row['password'];
 		$this->role = $row['role'];
+	}
+
+	function readAllMahasiswa() {
+		$query = "SELECT nama, nim, jurusan, telp, email, jenis_kelamin 
+		FROM {$this->table_mahasiswa}
+		ORDER BY nim ASC";
+		$stmt = $this->conn->prepare( $query );
+		$stmt->execute();
+
+		return $stmt;
 	}
 
 	function update() {
