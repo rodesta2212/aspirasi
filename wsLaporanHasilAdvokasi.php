@@ -5,5 +5,8 @@
     $config = new Config(); $db = $config->getConnection();
     $webservice = new Webservice($db);
     $data = $webservice->readAllSelesai();
-    print('<pre>');print_r($data);
+
+    // Menampilkan Data Web Service
+    print('<pre>');
+    print_r($data);
 ?>
