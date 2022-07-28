@@ -18,11 +18,16 @@ class Webservice {
 		GROUP BY B.nama";
 		$stmt = $this->conn->prepare( $query );
 		$stmt->execute();
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+		$i=0;
+		while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+			$laporan[$i]['jumlah_aspirasi'] = $row['jml_aspirasi'];
+			$laporan[$i]['nama_kategori'] = $row['nama_kategori'];
+			$i++;
+		}
         $data = [
             'status' => 'ok',
             'code'  => '200',
-            'data'  => $row
+            'data'  => $laporan
         ];
 		return json_encode($data);
     }
@@ -36,11 +41,16 @@ class Webservice {
 		GROUP BY SUBSTR(B.nim,1,2)";
 		$stmt = $this->conn->prepare( $query );
 		$stmt->execute();
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+		$i = 0;
+		while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+			$laporan[$i]['jml_aspirasi'] = $row['jml_aspirasi'];
+			$laporan[$i]['angkatan'] = $row['angkatan'];
+			$i++;
+		}
         $data = [
             'status' => 'ok',
             'code'  => '200',
-            'data'  => $row
+            'data'  => $laporan
         ];
 		return json_encode($data);
 	}
@@ -54,11 +64,20 @@ class Webservice {
 		ORDER BY id_aspirasi ASC";
 		$stmt = $this->conn->prepare( $query );
 		$stmt->execute();
-        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+		$i = 0;
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+			$response[$i]['id_aspirasi'] = $row['id_aspirasi'];
+			$response[$i]['nama_mahasiswa'] = $row['nama_mahasiswa'];
+			$response[$i]['aspirasi'] = $row['aspirasi'];
+			$response[$i]['nama_kategori'] = $row['nama_kategori'];
+			$response[$i]['bidang'] = $row['bidang'];
+			$response[$i]['status'] = $row['status'];
+			$i++;
+		}
         $data = [
             'status' => 'ok',
             'code'  => '200',
-            'data'  => $row
+            'data'  => $response
         ];
 		return json_encode($data);
 	}
