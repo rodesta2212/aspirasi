@@ -2,7 +2,7 @@
 MySQL Backup
 Source Server Version: 5.1.31
 Source Database: beni
-Date: 7/24/2022 21:47:50
+Date: 7/29/2022 19:57:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -75,8 +75,8 @@ CREATE TABLE `user` (
 -- ----------------------------
 --  Records 
 -- ----------------------------
-INSERT INTO `advokasi` VALUES ('1','turun sebesar 10%','1','Jadwal-Pembawa-Takjil-thn-2022.pdf'), ('2','materi akan di share berupa file','4','20220208_120771507_SJURWH_id.pdf');
-INSERT INTO `aspirasi` VALUES ('1','turunin spp','2','2','Selesai'), ('2','dosen jng telat','1','2','Selesai'), ('3','kurangin tugas kuliah','1','1','Selesai'), ('4','materi dosen harus bisa di share kepada mahasiswa','1','3','Selesai'), ('5','test 1','2','3','Selesai'), ('6','test 2','1','3','Selesai'), ('7','test 3','2','3','Selesai'), ('8','test 4','1','3','Selesai'), ('9','test 5','1','1','Selesai'), ('10','test 6','2','1','Selesai'), ('11','test 7','3','1','Selesai'), ('12','test 8','4','1','Selesai'), ('13','test 9','3','1','Selesai'), ('14','test 11','3','2','Selesai'), ('15','test 12','4','2','Selesai'), ('16','test 13','2','2','Selesai'), ('17','test 10\r\n','4','4','Selesai'), ('18','test 14','4','4','Selesai'), ('19','test 15','2','4','Selesai');
+INSERT INTO `advokasi` VALUES ('1','turun sebesar 10%','1','Jadwal-Pembawa-Takjil-thn-2022.pdf'), ('2','materi akan di share berupa file','4','20220208_120771507_SJURWH_id.pdf'), ('3','baik segera di laksanakan','20','Inventaris-Desa-Kalipucang.pdf');
+INSERT INTO `aspirasi` VALUES ('1','turunin spp','2','2','Selesai'), ('2','dosen jng telat','1','2','Selesai'), ('3','kurangin tugas kuliah','1','1','Selesai'), ('4','materi dosen harus bisa di share kepada mahasiswa','1','3','Selesai'), ('5','test 1','2','3','Selesai'), ('6','test 2','1','3','Selesai'), ('7','test 3','2','3','Selesai'), ('8','test 4','1','3','Selesai'), ('9','test 5','1','1','Selesai'), ('10','test 6','2','1','Selesai'), ('11','test 7','3','1','Selesai'), ('12','test 8','4','1','Selesai'), ('13','test 9','3','1','Selesai'), ('14','test 11','3','2','Selesai'), ('15','test 12','4','2','Selesai'), ('16','test 13','2','2','Selesai'), ('17','test 10\r\n','4','4','Selesai'), ('18','test 14','4','4','Selesai'), ('19','test 15','2','4','Selesai'), ('20','Univ SI berkembang','4','5','Selesai');
 INSERT INTO `kategori` VALUES ('1','WAKA 1','Akademik'), ('2','WAKA 2','Keuangan'), ('3','WAKA 3','Kemahasiswaan'), ('4','WAKA 4','Pengembangan SI');
-INSERT INTO `mahasiswa` VALUES ('1','3','Beni Akakom','1926177251','S1 - Sistem Informasi','beni@mail.com','62712835216','laki'), ('2','4','Ricky Rodesta','155610006','S1 - Sistem Informasi','ricky@mail.com','82163712348','laki'), ('3','5','Urip Akakom','175846662','S1 - Teknik Komputer','urip@gmail.com','82123945341','laki'), ('4','6','Dita','155612292','D3 - Rekayasa Perangkat Lunak Aplikasi','dita@mail.com','82162371234','perempuan');
-INSERT INTO `user` VALUES ('1','dpm','dpm','dpm','Dewan Perwakilan Mahasiswa'), ('2','bem','bem','bem','Badan Eksekutif Mahasiswa'), ('3','beni','beni','mahasiswa',NULL), ('4','ricky','ricky','mahasiswa',NULL), ('5','urip','urip','mahasiswa',NULL), ('6','dita','dita','mahasiswa',NULL);
+INSERT INTO `mahasiswa` VALUES ('1','3','Beni Akakom','1926177251','S1 - Sistem Informasi','beni@mail.com','62712835216','laki'), ('2','4','Ricky Rodesta','155610006','S1 - Sistem Informasi','ricky@mail.com','82163712348','laki'), ('3','5','Urip Akakom','175846662','S1 - Teknik Komputer','urip@gmail.com','82123945341','laki'), ('4','6','Dita','155612292','D3 - Rekayasa Perangkat Lunak Aplikasi','dita@mail.com','82162371234','perempuan'), ('5','7','Nisa Aprillia','185145553','D3 - Sistem Informasi Akuntansi','nisa@mail.com','84563124579','perempuan');
+INSERT INTO `user` VALUES ('1','dpm','dpm','dpm','Dewan Perwakilan Mahasiswa'), ('2','bem','bem','bem','Badan Eksekutif Mahasiswa'), ('3','beni','beni','mahasiswa',NULL), ('4','ricky','ricky','mahasiswa',NULL), ('5','urip','urip','mahasiswa',NULL), ('6','dita','dita','mahasiswa',NULL), ('7','nisa','nisa','mahasiswa',NULL);
