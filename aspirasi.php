@@ -91,6 +91,8 @@
 												Terkonfirmasi (Menunggu Tanggapan Advokasi)
 											<?php elseif($row['status'] == 'Selesai'): ?>
 												Selesai
+											<?php else: ?>
+												<?=$row['status']?>
 											<?php endif; ?>
 										<?php elseif($_SESSION['role'] == 'dpm'): ?>
 											<?php if($row['status'] == 'Terverifikasi'): ?>
@@ -101,6 +103,8 @@
 												Terkonfirmasi (Menunggu Tanggapan Advokasi)
 											<?php elseif($row['status'] == 'Selesai'): ?>
 												Selesai
+											<?php else: ?>
+												<?=$row['status']?>
 											<?php endif; ?>
 										<?php endif; ?>
 									</td>

@@ -93,6 +93,8 @@
 											Terkonfirmasi (Menunggu Tanggapan Advokasi)
 										<?php elseif($row['status'] == 'Selesai'): ?>
 											Selesai
+										<?php else: ?>
+											<?=$row['status']?>
 										<?php endif; ?>
 									</td>
 									<td>

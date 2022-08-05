@@ -82,8 +82,8 @@
 					<div style="padding-right:15px;">
                         <!-- <a href="ujian-create"> -->
 							<?php if($_SESSION['role'] == 'bem'): ?>
-								<a href="#" class="btn btn-danger float-right">Penolakan</a>
-								<button type="submit" class="btn btn-success float-right">Verifikasi</button>
+								<a href="aspirasi-penolakan.php?id=<?php echo $Aspirasi->id_aspirasi; ?>" class="btn btn-danger float-right">Penolakan</a>
+								<button type="submit" class="btn btn-success float-right" style="margin-right:10px;">Verifikasi</button>
 							<?php elseif($_SESSION['role'] == 'dpm'): ?>
 								<button type="submit" class="btn btn-success float-right">Konfirmasi</button>
 							<?php endif; ?>
