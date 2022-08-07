@@ -203,10 +203,11 @@ class Aspirasi {
 
 	// Laporan Hasil Advokasi
 	function readAllSelesai() {
-		$query = "SELECT A.id_aspirasi, B.nama AS nama_mahasiswa, A.aspirasi, C.nama AS nama_kategori, C.bidang, A.status 
+		$query = "SELECT A.id_aspirasi, B.nama AS nama_mahasiswa, A.aspirasi, C.nama AS nama_kategori, C.bidang, A.status, D.advokasi 
 		FROM {$this->table_aspirasi} A 
 		LEFT JOIN {$this->table_mahasiswa} B ON A.id_mahasiswa=B.id_mahasiswa 
-		LEFT JOIN {$this->table_kategori} C ON A.id_kategori=C.id_kategori 
+		LEFT JOIN {$this->table_kategori} C ON A.id_kategori=C.id_kategori
+		LEFT JOIN {$this->table_advokasi} D ON A.id_aspirasi=D.id_aspirasi 
 		WHERE A.status = 'Selesai'
 		ORDER BY id_aspirasi ASC";
 		$stmt = $this->conn->prepare( $query );

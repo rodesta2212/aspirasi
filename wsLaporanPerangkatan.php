@@ -6,7 +6,7 @@
     $webservice = new Webservice($db);
     $data = $webservice->LaporanPerangkatan();
 
-    // Menampilkan Data Web Service
+    // Menampilkan Data Web Service berupa json
     print('<pre>');
     print_r($data);
 ?>

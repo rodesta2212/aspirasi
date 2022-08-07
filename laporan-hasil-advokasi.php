@@ -47,7 +47,8 @@
 								<tr class="text-center">
 									<th>No</th>
 									<th>Aspirasi</th>
-                                    <th>Kategori</th>
+                                    <th>Advokasi</th>
+									<th>Kategori</th>
 									<th>Action</th>
 								</tr>
 							</thead>
@@ -56,7 +57,8 @@
 								<tr class="text-center">
 									<td><?=$no?></td>
 									<td><?=$row['aspirasi']?></td>
-                                    <td><?=$row['nama_kategori']?> (<?=$row['bidang']?>)</td>
+                                    <td><?=$row['advokasi']?></td>
+									<td><?=$row['nama_kategori']?> (<?=$row['bidang']?>)</td>
 									<td>
 										<a class="dropdown-item link-action" href="aspirasi-detail.php?id=<?php echo $row['id_aspirasi']; ?>"><i class="dw dw-eye"></i> Cek Hasil</a>
 									</td>
