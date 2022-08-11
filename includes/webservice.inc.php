@@ -90,6 +90,6 @@ class Webservice {
             'data'  => $response
         ];
 		// menampilkan data berupa json kedalam link
-		return json_encode($data);
+		return $data;
 	}
 }
