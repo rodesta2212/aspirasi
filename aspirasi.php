@@ -56,7 +56,7 @@
 				<!-- Simple Datatable start -->
 				<div class="card-box mb-30">
 					<div class="pd-20">
-						<h4 class="text-blue h4"><i class="dw dw-pencil"></i> Data Aspirasi</h4>
+						<h4 class="text-blue h4"><i class="dw dw-edit-file"></i> Data Aspirasi</h4>
 						<!-- <p class="mb-0">you can find more options <a class="text-primary" href="https://datatables.net/" target="_blank">Click Here</a></p> -->
                     </div>
                     <div style="padding-right:15px;">

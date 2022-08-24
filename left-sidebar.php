@@ -29,6 +29,11 @@
 							</a>
 						</li>
 						<li>
+							<a href="aspirasi-ditolak.php" class="dropdown-toggle no-arrow">
+								<span class="micon dw dw-file-5"></span><span class="mtext">Aspirasi</span>
+							</a>
+						</li>
+						<li>
 							<a href="laporan-hasil-advokasi.php" class="dropdown-toggle no-arrow">
 								<span class="micon dw dw-file-135"></span><span class="mtext">Laporan Hasil</span>
 							</a>
@@ -48,6 +53,11 @@
 						<li>
 							<a href="aspirasi.php" class="dropdown-toggle no-arrow">
 								<span class="micon dw dw-edit-file"></span><span class="mtext">Aspirasi</span>
+							</a>
+						</li>
+						<li>
+							<a href="aspirasi-ditolak.php" class="dropdown-toggle no-arrow">
+								<span class="micon dw dw-file-5"></span><span class="mtext">Aspirasi</span>
 							</a>
 						</li>
 						<li>
