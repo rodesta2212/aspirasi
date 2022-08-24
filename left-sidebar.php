@@ -30,7 +30,7 @@
 						</li>
 						<li>
 							<a href="aspirasi-ditolak.php" class="dropdown-toggle no-arrow">
-								<span class="micon dw dw-file-5"></span><span class="mtext">Aspirasi</span>
+								<span class="micon dw dw-file-5"></span><span class="mtext">Aspirasi Ditolak</span>
 							</a>
 						</li>
 						<li>
@@ -57,7 +57,7 @@
 						</li>
 						<li>
 							<a href="aspirasi-ditolak.php" class="dropdown-toggle no-arrow">
-								<span class="micon dw dw-file-5"></span><span class="mtext">Aspirasi</span>
+								<span class="micon dw dw-file-5"></span><span class="mtext">Aspirasi Ditolak</span>
 							</a>
 						</li>
 						<li>
